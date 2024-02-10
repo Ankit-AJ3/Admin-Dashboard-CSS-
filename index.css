@@ -17,4 +17,28 @@ body{
 main {
     background-color: #F4F7FF;
     min-height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.sidebar {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    height: inherit;
+}
+
+.sidebar-link {
+    text-decoration: none;
+    color: white;
+    padding: 24px;
+}
+
+.sidebar-link:first-child {
+    
+}
+
+.article {
+    margin: 32px;
 }
