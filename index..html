@@ -4,27 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>
     <title>Document</title>
 </head>
 <body>
     <nav class="nav">
         <h2 class="nav-title">Code Jugad</h2>
-        <div class="nav-search">
-            <input type="text" placeholder="Search Now"/>
-        </div>
-        <div class="nav-right">
-                <img class="user-image" src="https://cdn-icons-png.flaticon.com/512/9131/9131529.png" alt=""/>
+        <div class="nav-content">
+            <div class="nav-left">
+                <span class="material-icons menu-icon">menu</span>
+                <div class="nav-search">
+                    <span class="material-icons ">search</span>
+                    <input class="search-box" type="text" placeholder="Search Now"/>
+                </div>
+            </div>
+                <div class="nav-right">
+                    <span class="material-icons">notifications</span>
+                        <img class="user-image" src="https://cdn-icons-png.flaticon.com/512/9131/9131529.png" alt=""/>
+                        <span class="material-icons">more_horiz</span>
+                </div>
         </div>
     </nav>
     <main>
             <aside class="sidebar">
-                <a class="sidebar-link" href="#">Dashboard</a>
-                <a class="sidebar-link" href="#">Widgets</a>
-                <a class="sidebar-link" href="#">Users</a>
+                <a class="sidebar-link" href="#"><span class="material-icons">grid_view</span>
+                    <p class="">Dashboard</p>
+                </a>
+                <a class="sidebar-link" href="#"><span class="material-icons">settings</span>
+                    <p class="">Widgets</p>
+                </a>
+                <a class="sidebar-link" href="#"><span class="material-icons">person</span>
+                    <p class="">Users</p>
+                </a>
             </aside>
             <article class="article">
                 <h1>Hii, Ankit</h1>
                 <p>Welcome to code Jugaad Dashboard</p>
+                <section class="card-container">
+                <div class="card info-card">
+                    <p class="title">Today's Booking</p>
+                    <p class="subtitle">100</p>
+                    <p class="footer">30 days</p>
+                </div>
+                <div class="card info-card">
+                    <p class="title">Today's Mettings</p>
+                    <p class="subtitle">3</p>
+                    <p class="footer">30 days</p>
+                </div>
+                <div class="card info-card">
+                    <p class="title">Number of Clients</p>
+                    <p class="subtitle">67</p>
+                    <p class="footer">30 days</p>
+                </div>
+                <div class="card info-card">
+                    <p class="title">Total Booking</p>
+                    <p class="subtitle">167</p>
+                    <p class="footer">30 days</p>
+                </div>
+            </section>
+
+            <section class="table-container">
+                <h2 class="table-title">Transaction</h2>
+                <table class="card">
+                    <thead>
+                        <th>No</th>
+                        <th>Order</th>
+                        <th>Details</th>
+                        <th>Status</th>
+                        <th>Amount</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Paypal</td>
+                            <td>21SH5FGA</td>
+                            <td>Success</td>
+                            <td>$100</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
             </article>
     </main>
 </body>

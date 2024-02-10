@@ -1,11 +1,59 @@
 body{
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 .nav{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    box-shadow: 0px 0.5px 40px lightgray;
+    position: relative;
+    z-index: 1;
+    padding: 0 16px;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+}
+
+.nav-content {
     display: flex;
     justify-content: space-between;
-    box-shadow: 0px 10px 20px lightgray;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left > .menu-icon {
+    color: gray;
+    margin-right: 32px;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+}
+
+.nav-search > span {
+    color: gray;
+}
+
+.search-box {
+    border: none;
+    outline: none;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+ 
+.nav-right > span {
+    color: gray;
+    margin-left: 0px 8px;
 }
 
 .user-image {
@@ -27,18 +75,85 @@ main {
     flex-direction: column;
     padding: 16px;
     height: inherit;
+    box-shadow: 2px 0px 10px lightgray;
 }
 
 .sidebar-link {
     text-decoration: none;
-    color: white;
-    padding: 24px;
+    color: gray;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: start;
 }
 
 .sidebar-link:first-child {
-    
+    color: white;
+    background-color: #4B49AC;
+    border-radius: 8px;
+}
+
+.sidebar-link > p {
+    margin: 0;
+    margin-top: 8px;
+    margin-left: 8px;
 }
 
 .article {
     margin: 32px;
+}
+
+.material-icons {
+    padding-top: 4px;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 32px;
+}
+
+.card {
+    border-radius: 12px;
+    padding: 12px;
+    color: black;
+    background-color: white;
+    box-shadow: 5px 5px 20px lightgray;
+}
+
+.info-card {
+    color: white;
+}
+
+.info-card > p {
+    margin: 0;
+}
+
+.info-card > .title {
+    margin: 8px 0px ;
+}
+
+.info-card > .subtitle {
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+.info-card > .footer {
+    margin-top: 8px;
+}
+
+.info-card:nth-child(1){
+    background-color:  #7DA0F9;
+}
+.info-card:nth-child(2){
+    background-color:  #4747A1;
+}
+.info-card:nth-child(3){
+    background-color:  #F2797E;
+}
+.info-card:nth-child(4){
+    background-color:  #7978E9;
+}
+
+.table-container > table {
+    margin-top: 16px;
+    width: 100%;
 }
