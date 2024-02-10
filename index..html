@@ -39,7 +39,10 @@
                 </a>
             </aside>
             <article class="article">
-                <h1>Hii, Ankit</h1>
+                <div style="display: flex;">
+                        <h1>Hii, Ankit</h1>
+                        <div class="dot"></div>
+                 </div>
                 <p>Welcome to code Jugaad Dashboard</p>
                 <section class="card-container">
                 <div class="card info-card">
@@ -76,11 +79,20 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>1</td>
-                            <td>Paypal</td>
-                            <td>21SH5FGA</td>
-                            <td>Success</td>
-                            <td>$100</td>
+                            <td class="table-data">1</td>
+                            <td class="table-data">Paypal</td>
+                            <td class="table-data">21SH5FGA</td>
+                            <td class="table-data display-center">
+                                <p class="chip-success">Success</p></td>
+                            <td class="table-data">$100</td>
+                        </tr>
+                        <tr>
+                            <td class="table-data">2</td>
+                            <td class="table-data">Paypal</td>
+                            <td class="table-data">21SH5FGA</td>
+                            <td class="table-data display-center">
+                                <p class="chip-pending">Pending</p></td>
+                            <td class="table-data">$100</td>
                         </tr>
                     </tbody>
                 </table>
